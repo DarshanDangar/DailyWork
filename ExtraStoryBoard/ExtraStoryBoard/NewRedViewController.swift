@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  NewRedViewController.swift
 //  ExtraStoryBoard
 //
 //  Created by Darshan Dangar on 15/02/23.
@@ -7,21 +7,20 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class NewRedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
-        overrideUserInterfaceStyle = .light
-        
-        
 
         // Do any additional setup after loading the view.
     }
     
-    
+    @IBAction func showSecondViewController() {
+        let storyboard = UIStoryboard(name: "RedStoryboard", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(identifier: "NewRedViewController")
 
+        show(secondVC, sender: self)
+    }
     /*
     // MARK: - Navigation
 

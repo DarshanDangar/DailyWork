@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  StoryBoardViewController.swift
 //  ExtraStoryBoard
 //
 //  Created by Darshan Dangar on 15/02/23.
@@ -7,19 +7,16 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class StoryBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         
-        overrideUserInterfaceStyle = .light
-        
+        overrideUserInterfaceStyle = .dark
         
 
         // Do any additional setup after loading the view.
     }
-    
     
 
     /*

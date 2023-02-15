@@ -1,27 +1,28 @@
 //
-//  ThirdViewController.swift
-//  ExtraStoryBoard
+//  OutletViewController.swift
+//  OutletDemo
 //
 //  Created by Darshan Dangar on 15/02/23.
 //
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class OutletViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
-        overrideUserInterfaceStyle = .light
-        
-        
 
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var label: UILabel!
+    
+    @IBAction func btnclick(_ sender: UIButton) {
+        print("This is Darshan")
+        label.text = "This is Darshan"
+    }
     
     
-
+    
     /*
     // MARK: - Navigation
 
